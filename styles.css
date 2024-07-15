@@ -37,3 +37,25 @@ nav a {
 .Connect-Wallet:hover {
     background-color: #ffcccb;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    padding: 0 50px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.content {
+    max-width: 50%;
+    border: 1px solid red;
+    padding: 50px;
+}
