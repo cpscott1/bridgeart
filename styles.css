@@ -1,60 +1,90 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: "Cabin", sans-serif;
-}
-
 body {
-    background-color: pink;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #FF9AA2, #FFB7B2);
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #FF9AA2;
+    padding: 1rem;
     color: white;
 }
-
-header {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
-nav a {
-    margin: 0 15px;
-    color: #fff; 
-    text-decoration: none;
+.logo {
+    font-size: 1.5rem;
     font-weight: bold;
-}
-
-.Connect-Wallet {
-    background-color: #fff;
-    color: pink;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.Connect-Wallet:hover {
-    background-color: #ffcccb;
-}
-
-main {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: calc(100vh - 70px);
-    padding: 0 50px;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
 }
-
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #FFD1DC;
+}
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
 }
-
-.content {
-    max-width: 50%;
-    border: 1px solid red;
+.hero-text {
+    flex: 1;
+    padding-right: 2rem;
+}
+.hero-image {
+    flex: 1;
+}
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn {
+    background-color: white;
+    color: #FF9AA2;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn:hover {
+    background-color: #FFD1DC;
+    color: white;
+}
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+    .hero-text, .hero-image {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
 }
